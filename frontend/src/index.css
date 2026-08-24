@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg-base: #f6f5f0;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-solid: #ffffff;
+  --bg-card: rgba(243, 241, 232, 0.65);
+  --border-color: rgba(28, 25, 23, 0.09);
+  --border-color-glow: rgba(179, 146, 104, 0.35);
+  
+  --primary: #9a7b56;
+  --primary-hover: #816543;
+  --primary-glow: rgba(154, 123, 86, 0.15);
+  
+  --accent-cyan: #4a779d;
+  --accent-emerald: #2e724f;
+  --accent-amber: #b87a14;
+  --accent-rose: #b13c54;
+  
+  --text-primary: #2b2723;
+  --text-secondary: #6e6760;
+  --text-muted: #9e9790;
+  
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  
+  --shadow-sm: 0 2px 8px rgba(28, 25, 23, 0.04);
+  --shadow-md: 0 8px 16px rgba(28, 25, 23, 0.06);
+  --shadow-lg: 0 16px 32px rgba(28, 25, 23, 0.08), 0 0 40px rgba(154, 123, 86, 0.03);
+  --shadow-glow: 0 0 25px rgba(154, 123, 86, 0.12);
+  
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(154, 123, 86, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(74, 119, 157, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(177, 60, 84, 0.02) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(28, 25, 23, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-glow);
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+input, select, textarea, button {
+  font-family: var(--font-sans);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-cyan);
+}
