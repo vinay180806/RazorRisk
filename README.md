@@ -23,10 +23,12 @@ In Indian e-commerce, **Return to Origin (RTO)** is a major profit killer. COD o
 
 3. **Razorpay Webhook Interceptor & Playground**:
    - Interactive console to simulate Razorpay payment events (`order.created`, `payment.authorized`).
-   - Visual speedometer gauge of risk and specific rule alerts.
+   - Visual speedometer gauge of risk and specific rule audits.
+   - **Semantic Address Parser & PIN Code Auditor**: Regular expression engine checking for 6-digit Indian PIN codes, landmark keywords (*near, opposite, behind*), and address character length, outputting an Address Quality scorecard (out of 100).
+   - **WhatsApp/SMS Mobile UI Simulator**: Live mockups illustrating automated customer-facing notification push flows (e.g. COD verification triggers or Razorpay prepaid upsell discount links).
    - Triggerable mock scenarios: Safe Buyer, Chronic RTOer, Coupon Fraud.
 
-4. **Premium Cyberpunk Glassmorphic Dashboard**:
+4. **Premium Beige & Alabaster Light Glassmorphic Dashboard**:
    - Built with React, TypeScript, and custom CSS.
    - Beautiful custom animated SVG graphs (ROC curve, PR curve, Savings curve).
    - Real-time ticker stream of incoming transactions being evaluated.
